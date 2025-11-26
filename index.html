@@ -8,8 +8,21 @@
     <title>Toast Notifications</title>
 
     <link href="./styles/general.css" rel="stylesheet"/>
+    <link href="./styles/buttons.css" rel="stylesheet"/>
+    <link href="./styles/toastBox.css" rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/ce183b7de0.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
-    
+    <div class="buttons">
+      <button onclick="showToast(successMsg)">Success</button>
+      <button onclick="showToast(errorMsg)">Error</button>
+      <button onclick="showToast(invalidMsg)">Invalid</button>
+    </div>
+
+    <div id="toastBox" class="js-toastBox"></div>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

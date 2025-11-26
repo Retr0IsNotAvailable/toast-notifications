@@ -1,0 +1,35 @@
+#toastBox {
+  position: absolute;
+  right: 1.9rem;
+  bottom: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.toast {
+  width: 25rem;
+  height: 5rem;
+  background: #fff;
+  font-weight: 500;
+  margin: 0.9rem 0;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.toast i {
+  margin: 0 1.25rem;
+  font-size: 2.2rem;
+  color: #008000;
+}
+
+.toast.error i {
+  color: #ff0000;
+}
+
+.toast.invalid i {
+  color: #ffa500;
+}
